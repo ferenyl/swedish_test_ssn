@@ -4,12 +4,12 @@ name = "swedish_test_ssn"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
-license-file = ""
+license-file = "LICENSE"
 authors = ["Ferenyl"]
-repository = ""
-readme = ""
-description = ""
-keywords = []
+repository = "https://github.com/ferenyl/swedish_test_ssn"
+readme = "README.md"
+description = "Get Swedish test ssn from The Swedish Tax Agency (Skatteverket)"
+keywords = ["The Swedish Tax Agency", "Skatteverket", "Swedish test ssn"]
 
 
 [dependencies]

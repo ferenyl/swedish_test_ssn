@@ -42,15 +42,13 @@ fn main() {
         "https://skatteverket.entryscape.net/rowstore/dataset/b4de7df7-63c0-4e7e-bb59-1f156a591763?testpersonnummer={pattern}&_limit={limit}&_offset={offset}"
     );
 
-    let response = reqwest::blocking::get(url).unwrap();
-    let result: Result = response.json().unwrap();
-    let items: Vec<String> = result
-        .results
-        .iter()
-        .map(|v| v.testpersonnummer.to_string())
-        .collect();
+    let items = get_items(url);
 
-    match args.json {
+    print_items(args.json, items);
+}
+
+fn print_items(json: bool, items: Vec<String>) {
+    match json {
         false => {
             for item in items {
                 println!("{}", item);
@@ -61,4 +59,14 @@ fn main() {
             println!("{}", json_str);
         }
     }
+}
+
+fn get_items(url: String) -> std::vec::Vec<std::string::String> {
+    let response = reqwest::blocking::get(url).unwrap();
+    let result: Result = response.json().unwrap();
+    result
+        .results
+        .iter()
+        .map(|v| v.testpersonnummer.to_string())
+        .collect()
 }
