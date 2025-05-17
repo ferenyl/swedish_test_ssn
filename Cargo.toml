@@ -1,0 +1,20 @@
+[package]
+categories = ["command-line-utilities"]
+name = "swedish_test_ssn"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+license-file = ""
+authors = ["Ferenyl"]
+repository = ""
+readme = ""
+description = ""
+keywords = []
+
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.38", features = ["derive"] }
+reqwest = { version = "*", features = ["json", "blocking"] }
+serde = { version = "*", features = ["derive"] }
+serde_json = "1.0.140"
