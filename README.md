@@ -1,7 +1,10 @@
 # Swedish test social security numbers
-[![Rust](https://github.com/ferenyl/swedish_test_ssn/actions/workflows/rust.yml/badge.svg)](https://github.com/ferenyl/swedish_test_ssn/actions/workflows/rust.yml)
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ferenyl/swedish_test_ssn/rust.yml?style=for-the-badge)
 
 Get Swedish test ssn from The Swedish Tax Agency (Skatteverket).
+
+These can be used in test environments without risk of breaching GDPR.
 
 Usage: swedish_test_ssn [OPTIONS]
 
