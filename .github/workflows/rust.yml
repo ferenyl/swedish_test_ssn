@@ -29,7 +29,7 @@ jobs:
         env:
           NEW_VERSION: ${{ steps.get_version.outputs.NEW_VERSION }}
         run: |
-          sed -i "s/version = .*/version = $NEW_VERSION/g" ./Cargo.toml
+          sed -i -E 's/^version = "[0-9.]*"$/version = "$NEW_VERSION"/' Cargo.toml
         if: startsWith(github.ref, 'refs/tags/v')
 
       - name: Generate release notes
