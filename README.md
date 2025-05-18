@@ -1,6 +1,6 @@
 # Swedish test social security numbers
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ferenyl/swedish_test_ssn/rust.yml?style=for-the-badge) ![Crates.io Version](https://img.shields.io/crates/v/swedish_test_ssn?style=for-the-badge)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ferenyl/swedish_test_ssn/rust.yml?style=for-the-badge)](https://github.com/ferenyl/swedish_test_ssn/actions/workflows/rust.yml) [![Crates.io Version](https://img.shields.io/crates/v/swedish_test_ssn?style=for-the-badge)](https://crates.io/crates/swedish_test_ssn)
 
 dotnet tools version: [SwedishTestSsn](https://github.com/ferenyl/SwedishTestSsn)
 
