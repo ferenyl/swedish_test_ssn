@@ -1,6 +1,8 @@
 # Swedish test social security numbers
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ferenyl/swedish_test_ssn/rust.yml?style=for-the-badge)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ferenyl/swedish_test_ssn/rust.yml?style=for-the-badge) ![Crates.io Version](https://img.shields.io/crates/v/swedish_test_ssn?style=for-the-badge)
+
+`cargo install swedish_test_ssn`
 
 Get Swedish test ssn from The Swedish Tax Agency (Skatteverket).
 
