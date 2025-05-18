@@ -18,18 +18,18 @@ struct SsnResult {
 }
 
 #[derive(Parser, Debug)]
-#[command(version, about, long_about = None)]
+#[command(version, about, long_about = None, about = String::from("Get swedish test ssn from The Swedish Tax Agency (Skatteverket). Great for testing without risking breaching GDPR"))]
 struct Args {
-    #[arg(short, long, default_value_t = String::from(".*"))]
+    #[arg(short, long, default_value_t = String::from(".*"), help = String::from("Pattern for ssn. Regular expressions can be used"))]
     pattern: String,
 
-    #[arg(short, long, default_value_t = 100)]
+    #[arg(short, long, default_value_t = 100, help = String::from("Limit the number of items returned"))]
     limit: i32,
 
-    #[arg(short, long, default_value_t = 0)]
+    #[arg(short, long, default_value_t = 0, help = String::from("Number of items to skip"))]
     offset: i32,
 
-    #[arg(short, long, default_value_t = false)]
+    #[arg(short, long, default_value_t = false, help = String::from("Return as json array"))]
     json: bool,
 }
 

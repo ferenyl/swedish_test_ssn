@@ -6,22 +6,16 @@ dotnet tools version: [SwedishTestSsn](https://github.com/ferenyl/SwedishTestSsn
 
 `cargo install swedish_test_ssn`
 
-Get Swedish test ssn from The Swedish Tax Agency (Skatteverket).
-
-These can be used in test environments without risk of breaching GDPR.
+```bash
+Get swedish test ssn from The Swedish Tax Agency (Skatteverket). Great for testing without risking breaching GDPR
 
 Usage: swedish_test_ssn [OPTIONS]
 
 Options:
-
--p, --pattern [default: .*]
-
--l, --limit [default: 100]
-
--o, --offset [default: 0]
-
--j, --json
-
--h, --help Print help
-
--V, --version Print version
+  -p, --pattern <PATTERN>  Pattern for ssn. Regular expressions can be used [default: .*]
+  -l, --limit <LIMIT>      Limit the number of items returned [default: 100]
+  -o, --offset <OFFSET>    Number of items to skip [default: 0]
+  -j, --json               Return as json array
+  -h, --help               Print help
+  -V, --version            Print version
+```
