@@ -9,7 +9,7 @@ authors = ["Ferenyl"]
 repository = "https://github.com/ferenyl/swedish_test_ssn"
 readme = "README.md"
 description = "Get Swedish test ssn from The Swedish Tax Agency (Skatteverket)"
-keywords = ["The Swedish Tax Agency", "Skatteverket", "Swedish test ssn"]
+keywords = ["Swedish Tax Agency", "Skatteverket", "Swedish test ssn"]
 
 
 [dependencies]
