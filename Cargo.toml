@@ -3,7 +3,6 @@ categories = ["command-line-utilities"]
 name = "swedish_test_ssn"
 version = "1.0.0"
 edition = "2024"
-license = "MIT"
 license-file = "LICENSE"
 authors = ["Ferenyl"]
 repository = "https://github.com/ferenyl/swedish_test_ssn"
