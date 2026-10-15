@@ -22,6 +22,10 @@ updates:
       cargo:
         patterns:
           - "*"
+      cargo-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
     # Customize commit messages
     commit-message:
       prefix: "cargo"
@@ -46,6 +50,10 @@ updates:
       - "github-actions"
     groups:
       github-actions:
+        patterns:
+          - "*"
+      github-actions-security:
+        applies-to: security-updates
         patterns:
           - "*"
     commit-message:
