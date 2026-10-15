@@ -8,8 +8,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "09:00"
+      day: "wednesday"
+      time: "05:00"
       timezone: "Europe/Stockholm"
     # Limit the number of open pull requests for Cargo dependencies
     open-pull-requests-limit: 5
@@ -17,14 +17,11 @@ updates:
     labels:
       - "dependencies"
       - "rust"
-    # Group minor and patch updates together to reduce noise
+    # Group all updates together to reduce noise
     groups:
-      minor-and-patch:
+      cargo:
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
     # Customize commit messages
     commit-message:
       prefix: "cargo"
@@ -40,13 +37,17 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "09:00"
+      day: "wednesday"
+      time: "05:00"
       timezone: "Europe/Stockholm"
     open-pull-requests-limit: 2
     labels:
       - "dependencies"
       - "github-actions"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
     commit-message:
       prefix: "ci"
       include: "scope"
